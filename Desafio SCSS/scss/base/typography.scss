@@ -1,0 +1,23 @@
+/*mixin*/
+@mixin h3-style($font_size, $color, $negrita){
+    font-size: $font_size;
+    color: $color;
+    font-weight: $negrita;
+}
+
+
+h1 {
+    font-size: 3.8em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.1em;
+}
+
+ul {
+    list-style: none;
+}

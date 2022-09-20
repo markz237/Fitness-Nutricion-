@@ -1,0 +1,39 @@
+/*header*/ 
+header{
+    .navbar-personalizado {
+        border-bottom: map-get($colors, tertiary) 2px solid;
+        .navbar-brand{
+            color: map-get($colors, secondary);
+            font-weight: bolder;
+            font-size: 1.1em;
+        }
+        
+        .botones-nav {
+            font-size: 0.8em;
+            text-decoration: none;
+            color: map-get($colors, secondary);
+            font-weight: bolder;
+        }
+    }
+}
+
+@media (min-width: 1200px) {  
+/*header*/ 
+    header{
+        .navbar-personalizado {
+            border-bottom: map-get($colors, tertiary) 2px solid;
+            .navbar-brand{
+                color: map-get($colors, secondary);
+                font-weight: bolder;
+                font-size: 1.9em;
+            }
+            
+            .botones-nav {
+                font-size: 1.1em;
+                text-decoration: none;
+                color: map-get($colors, secondary);
+                font-weight: bolder;
+            }
+        }
+    }
+}

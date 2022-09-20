@@ -1,0 +1,43 @@
+/*footer*/
+#index {
+    background-color: map-get($colors, primary);
+    border-top: map-get($colors, tertiary) 2px solid;
+
+    #redes {
+        margin: 2% 2% 2% 2%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .foto_redes {
+            height: 40px;
+            width: 40px;
+            margin: 3px;
+            padding: 0px;
+            border: 1px solid map-get($colors, secondary);
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+/*footer*/
+    #index {
+        background-color: map-get($colors, primary);
+        border-top: map-get($colors, tertiary) 2px solid;
+    
+        #redes {
+            margin: 30px 30px 30px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            .foto_redes {
+                height: 40px;
+                width: 40px;
+                margin: 15px;
+                padding: 0px;
+                border: 1px solid map-get($colors, secondary);
+            }
+        }
+    }
+}
