@@ -1,9 +1,23 @@
-/*mixin*/
-@mixin h3-style($font_size, $color, $negrita){
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@mixin h-style($font_size, $color, $negrita){
     font-size: $font_size;
     color: $color;
     font-weight: $negrita;
 }
+
+@mixin contenedor($display, $direccion, $justify, $align){
+    display: $display;
+    flex-direction: $direccion;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+/*agregar mas mixing para fotos y contenedores*/
 
 
 h1 {

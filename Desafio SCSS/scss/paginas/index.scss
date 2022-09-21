@@ -1,24 +1,18 @@
+@import '../base/color.scss';
 /*MAIN INDEX*/
 main{
     .contenedor-main{
-        display:flex;
-        flex-direction: column;
-        align-items: center;
+        @include contenedor(flex, column, center, center);
     }
 
     .resultados-titulo{
-        @include h3-style(1.2em,map-get($colors, secondary), bolder);
-        display: flex;
-        justify-content: center;
+        @include h-style(1.2em,map-get($colors, secondary), bolder);
+        @include contenedor(flex, column, center, center);
         margin-top: 3%;
-        
     }
 
     .contenedor-carrusel{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
+        @include contenedor(flex, column, center, center);
     
         .imagen-carrusel{
             width: 300px;
@@ -39,13 +33,10 @@ main{
 
     .contenedor-aside{
         border-top: map-get($colors, tertiary) 2px solid;
-        display:flex;
-        flex-direction: column;
-        align-items: center;
+        @include contenedor(flex, column, center, center);
 
         .consejos-titulo{
-            @include h3-style(1.2em,map-get($colors, secondary), bolder);
-            display: flex;
+            @include h-style(1.2em,map-get($colors, secondary), bolder);
             margin-top: 10%;
         }
 
@@ -57,8 +48,7 @@ main{
         }
         
         .map_titulo {
-            @include h3-style(1.2em,map-get($colors, secondary), bolder);
-            display: flex;
+            @include h-style(1.2em,map-get($colors, secondary), bolder);
             margin-top: 3%;
         }
         
@@ -70,28 +60,65 @@ main{
         }
     }
 }
+
+@media (min-width: 580px) {
+    .contenedor-carrusel{
+        @include contenedor(flex, column, center, center);
+
+        .imagen-carrusel{
+            width: 320px;
+            padding-top: 2%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 3%;
+        }
+        
+        .boton-contacto {
+            background-color: map-get($colors, secondary);
+            font-weight: bolder;
+            margin: 10%;
+        }
+    }
+}
+
+@media (min-width: 850px) {
+    .contenedor-carrusel{
+        @include contenedor(flex, column, center, center);
+
+    .imagen-carrusel{
+        width: 350px;
+        padding-top: 2%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 3%;
+    }
+    
+    .boton-contacto {
+        background-color: map-get($colors, secondary);
+        font-weight: bolder;
+        margin: 10%;
+    }
+}
+
+}
+
 @media (min-width: 1200px) {
     /*main INDEX*/
     main{
         .contenedor-main{
-            display:flex;
-            flex-direction: column;
-            align-items: center;
+            @include contenedor(flex, column, center, center);
         }
     
         .resultados-titulo{
-            @include h3-style(1.2em,map-get($colors, secondary), bolder);
-            display: flex;
-            justify-content: center;
-            margin-top: 5%;
+            @include h-style(1.5em,map-get($colors, secondary), bolder);
+            @include contenedor(flex, column, center, center);
+            margin-top: 4%;
+            margin-bottom: 2%;
         }
     
         .contenedor-carrusel{
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                align-items: center;
-        
+                @include contenedor(flex, column, center, center);
+                
                 .imagen-carrusel{
                     width: 380px;
                     padding-top: 2%;
@@ -111,13 +138,10 @@ main{
         .contenedor-aside{
             border-top: map-get($colors, tertiary)0px solid;
             border-left: map-get($colors, tertiary) 2px solid;
-            display:flex;
-            flex-direction: column;
-            align-items: center;
+            @include contenedor(flex, column, center, center);
     
             .consejos-titulo{
-                @include h3-style(1.2em,map-get($colors, secondary), bolder);
-                display: flex;
+                @include h-style(1.2em,map-get($colors, secondary), bolder);
                 margin-top: 5%;
             }
     
@@ -129,8 +153,7 @@ main{
             }
             
             .map_titulo {
-                @include h3-style(1.2em,map-get($colors, secondary), bolder);
-                display: flex;
+                @include h-style(1.2em,map-get($colors, secondary), bolder);
                 margin-top: 5%;
             }
             

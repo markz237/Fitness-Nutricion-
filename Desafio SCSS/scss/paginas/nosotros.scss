@@ -1,13 +1,12 @@
+@import '../base/color.scss';
 /*NOSOTROS*/
 section{
 
     #caracteristicas-h2 {
-        display: flex;
-        justify-content: center;
+        @include h-style(1.8em,map-get($colors, secondary), bolder);
+        @include contenedor(flex, row, center, center);
         margin-top: 5vh;
         margin-bottom: 5vh;
-        color: map-get($colors, secondary);
-        font-weight: bolder;
     }
     
     #caracteristicas-p {
@@ -24,22 +23,15 @@ section{
 
     .contenedor-nosotros{
         .c1 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include contenedor(flex, column, center, center);
         }
         
         .c2 {
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
+            @include contenedor(flex, row, center, center);
         }
         
         .c3 {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include contenedor(flex, column, center, center);
         }
 
         .img-seguridad {
@@ -66,9 +58,8 @@ section{
     }
     
     .container-boton {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include contenedor(flex, row, center, center);
+        
     
         #boton-nosotros {
             background-color: map-get($colors, secondary);
@@ -86,5 +77,16 @@ section{
             background-color: map-get($colors, primary);
             border-top: map-get($colors, tertiary) 2px solid;
         }
+    }
+}
+
+@media (min-width: 1000px) {
+    section{
+        #caracteristicas-h2 {
+            @include h-style(2.5em,map-get($colors, secondary), bolder);
+            @include contenedor(flex, row, center, center);
+            margin-top: 6vh;
+            margin-bottom: 6vh;
+        } 
     }
 }

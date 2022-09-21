@@ -1,13 +1,12 @@
+@import '../base/color.scss';
 /*footer*/
 #index {
     background-color: map-get($colors, primary);
     border-top: map-get($colors, tertiary) 2px solid;
 
     #redes {
+        @include contenedor(flex, row, center, center);
         margin: 2% 2% 2% 2%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
 
         .foto_redes {
             height: 40px;
@@ -26,10 +25,8 @@
         border-top: map-get($colors, tertiary) 2px solid;
     
         #redes {
+            @include contenedor(flex, row, center, center);
             margin: 30px 30px 30px 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
     
             .foto_redes {
                 height: 40px;
