@@ -1,27 +1,28 @@
 @import '../base/color.scss';
+
 /*MAIN INDEX*/
-main{
-    .contenedor-main{
-        @include contenedor(flex, column, center, center);
+main {
+    .contenedor-main {
+        @include contenedor-1(flex, column, center, center);
     }
 
-    .resultados-titulo{
-        @include h-style(1.2em,map-get($colors, secondary), bolder);
-        @include contenedor(flex, column, center, center);
+    .resultados-titulo {
+        @include h-style(1.2em, map-get($colors, secondary), bolder);
+        @include contenedor-1(flex, column, center, center);
         margin-top: 3%;
     }
 
-    .contenedor-carrusel{
-        @include contenedor(flex, column, center, center);
-    
-        .imagen-carrusel{
+    .contenedor-carrusel {
+        @include contenedor-1(flex, column, center, center);
+
+        .imagen-carrusel {
             width: 300px;
             padding-top: 2%;
             padding-left: 2%;
             padding-right: 2%;
             padding-bottom: 3%;
         }
-        
+
         .boton-contacto {
             background-color: map-get($colors, secondary);
             font-weight: bolder;
@@ -31,27 +32,27 @@ main{
 
     /*ASIDE INDEX*/
 
-    .contenedor-aside{
+    .contenedor-aside {
         border-top: map-get($colors, tertiary) 2px solid;
-        @include contenedor(flex, column, center, center);
+        @include contenedor-1(flex, column, center, center);
 
-        .consejos-titulo{
-            @include h-style(1.2em,map-get($colors, secondary), bolder);
+        .consejos-titulo {
+            @include h-style(1.2em, map-get($colors, secondary), bolder);
             margin-top: 10%;
         }
 
-        .flexbox_video iframe{
+        .flexbox_video iframe {
             padding: 9px;
             background-color: map-get($colors, tertiary);
             box-shadow: 2px 2px 10px map-get($colors, secondary);
             margin-bottom: 3%;
         }
-        
+
         .map_titulo {
-            @include h-style(1.2em,map-get($colors, secondary), bolder);
+            @include h-style(1.2em, map-get($colors, secondary), bolder);
             margin-top: 3%;
         }
-        
+
         .flexbox_map iframe {
             padding: 9px;
             background-color: map-get($colors, tertiary);
@@ -62,17 +63,17 @@ main{
 }
 
 @media (min-width: 580px) {
-    .contenedor-carrusel{
-        @include contenedor(flex, column, center, center);
+    .contenedor-carrusel {
+        @include contenedor-1(flex, column, center, center);
 
-        .imagen-carrusel{
+        .imagen-carrusel {
             width: 320px;
             padding-top: 2%;
             padding-left: 2%;
             padding-right: 2%;
             padding-bottom: 3%;
         }
-        
+
         .boton-contacto {
             background-color: map-get($colors, secondary);
             font-weight: bolder;
@@ -82,81 +83,82 @@ main{
 }
 
 @media (min-width: 850px) {
-    .contenedor-carrusel{
-        @include contenedor(flex, column, center, center);
+    .contenedor-carrusel {
+        @include contenedor-1(flex, column, center, center);
 
-    .imagen-carrusel{
-        width: 350px;
-        padding-top: 2%;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-bottom: 3%;
+        .imagen-carrusel {
+            width: 350px;
+            padding-top: 2%;
+            padding-left: 2%;
+            padding-right: 2%;
+            padding-bottom: 3%;
+        }
+
+        .boton-contacto {
+            background-color: map-get($colors, secondary);
+            font-weight: bolder;
+            margin: 10%;
+        }
     }
-    
-    .boton-contacto {
-        background-color: map-get($colors, secondary);
-        font-weight: bolder;
-        margin: 10%;
-    }
-}
 
 }
 
 @media (min-width: 1200px) {
+
     /*main INDEX*/
-    main{
-        .contenedor-main{
-            @include contenedor(flex, column, center, center);
+    main {
+        .contenedor-main {
+            @include contenedor-1(flex, column, center, center);
         }
-    
-        .resultados-titulo{
-            @include h-style(1.5em,map-get($colors, secondary), bolder);
-            @include contenedor(flex, column, center, center);
+
+        .resultados-titulo {
+            @include h-style(1.5em, map-get($colors, secondary), bolder);
+            @include contenedor-1(flex, column, center, center);
             margin-top: 4%;
             margin-bottom: 2%;
         }
-    
-        .contenedor-carrusel{
-                @include contenedor(flex, column, center, center);
-                
-                .imagen-carrusel{
-                    width: 380px;
-                    padding-top: 2%;
-                    padding-left: 2%;
-                    padding-right: 2%;
-                    padding-bottom: 2%;
-                }
-            
+
+        .contenedor-carrusel {
+            @include contenedor-1(flex, column, center, center);
+
+            .imagen-carrusel {
+                width: 380px;
+                padding-top: 2%;
+                padding-left: 2%;
+                padding-right: 2%;
+                padding-bottom: 2%;
+            }
+
             .boton-contacto {
                 background-color: map-get($colors, secondary);
                 font-weight: bolder;
                 margin: 5%;
             }
         }
-        
+
         /*aside INDEX*/
-        .contenedor-aside{
+        .contenedor-aside {
             border-top: map-get($colors, tertiary)0px solid;
             border-left: map-get($colors, tertiary) 2px solid;
-            @include contenedor(flex, column, center, center);
-    
-            .consejos-titulo{
-                @include h-style(1.2em,map-get($colors, secondary), bolder);
+            @include contenedor-1(flex, column, center, center);
+
+            .consejos-titulo {
+                @include h-style(1.2em, map-get($colors, secondary), bolder);
                 margin-top: 5%;
             }
-    
-            .flexbox_video iframe{
+
+            .flexbox_video iframe {
                 padding: 9px;
                 background-color: map-get($colors, tertiary);
                 box-shadow: 2px 2px 10px map-get($colors, secondary);
                 margin-bottom: 3%;
             }
-            
+
             .map_titulo {
-                @include h-style(1.2em,map-get($colors, secondary), bolder);
+                @include h-style(1.2em, map-get($colors, secondary), bolder);
                 margin-top: 5%;
             }
-            
+
             .flexbox_map iframe {
                 padding: 9px;
                 background-color: map-get($colors, tertiary);

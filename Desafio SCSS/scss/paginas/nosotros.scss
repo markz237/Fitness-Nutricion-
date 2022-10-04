@@ -1,37 +1,38 @@
 @import '../base/color.scss';
+
 /*NOSOTROS*/
-section{
+section {
 
     #caracteristicas-h2 {
-        @include h-style(1.8em,map-get($colors, secondary), bolder);
-        @include contenedor(flex, row, center, center);
+        @include h-style(1.8em, map-get($colors, secondary), bolder);
+        @include contenedor-1(flex, row, center, center);
         margin-top: 5vh;
         margin-bottom: 5vh;
     }
-    
+
     #caracteristicas-p {
         color: map-get($colors, secondary);
         margin: 1vh;
         text-align: left;
-    
-    }
-    
-    #caracteristicas-ul {
-        color: map-get($colors, secondary);
-    
+
     }
 
-    .contenedor-nosotros{
+    #caracteristicas-ul {
+        color: map-get($colors, secondary);
+
+    }
+
+    .contenedor-nosotros {
         .c1 {
-            @include contenedor(flex, column, center, center);
+            @include contenedor-1(flex, column, center, center);
         }
-        
+
         .c2 {
-            @include contenedor(flex, row, center, center);
+            @include contenedor-1(flex, row, center, center);
         }
-        
+
         .c3 {
-            @include contenedor(flex, column, center, center);
+            @include contenedor-1(flex, column, center, center);
         }
 
         .img-seguridad {
@@ -48,7 +49,7 @@ section{
         .img-acces {
             @extend .img-seguridad;
         }
-        
+
         .img-list {
             @extend .img-seguridad;
             margin-left: 1vh;
@@ -56,11 +57,11 @@ section{
             height: 30vh;
         }
     }
-    
+
     .container-boton {
-        @include contenedor(flex, row, center, center);
-        
-    
+        @include contenedor-1(flex, row, center, center);
+
+
         #boton-nosotros {
             background-color: map-get($colors, secondary);
             font-size: 1.4em;
@@ -72,7 +73,7 @@ section{
             color: map-get($colors, primary);
             margin-bottom: 7vh;
         }
-        
+
         #nosotros {
             background-color: map-get($colors, primary);
             border-top: map-get($colors, tertiary) 2px solid;
@@ -81,12 +82,12 @@ section{
 }
 
 @media (min-width: 1000px) {
-    section{
+    section {
         #caracteristicas-h2 {
-            @include h-style(2.5em,map-get($colors, secondary), bolder);
-            @include contenedor(flex, row, center, center);
+            @include h-style(2.5em, map-get($colors, secondary), bolder);
+            @include contenedor-1(flex, row, center, center);
             margin-top: 6vh;
             margin-bottom: 6vh;
-        } 
+        }
     }
 }

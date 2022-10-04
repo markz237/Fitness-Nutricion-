@@ -4,13 +4,13 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-@mixin h-style($font_size, $color, $negrita){
+@mixin h-style($font_size, $color, $negrita) {
     font-size: $font_size;
     color: $color;
     font-weight: $negrita;
 }
 
-@mixin contenedor($display, $direccion, $justify, $align){
+@mixin contenedor-1($display, $direccion, $justify, $align) {
     display: $display;
     flex-direction: $direccion;
     justify-content: $justify;
