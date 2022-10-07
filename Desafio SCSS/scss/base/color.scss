@@ -6,7 +6,9 @@ $colors: (
 );
 
 body {
-    height: 100vh;
-    width: 100%;
     background: linear-gradient(to bottom, #525252, #252525);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }

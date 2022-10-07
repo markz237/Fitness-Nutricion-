@@ -139,8 +139,7 @@ main {
         /*aside INDEX*/
         .contenedor-aside {
             border-top: map-get($colors, tertiary)0px solid;
-            border-left: map-get($colors, tertiary) 2px solid;
-            @include contenedor-1(flex, column, center, center);
+            @include contenedor-1(flex, column, center, flex-start);
 
             .consejos-titulo {
                 @include h-style(1.2em, map-get($colors, secondary), bolder);
