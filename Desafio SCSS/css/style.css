@@ -544,6 +544,91 @@ section .container-boton {
     margin-top: 6vh;
     margin-bottom: 6vh; } }
 
+/*maps*/
+body {
+  background: linear-gradient(to bottom, #525252, #252525);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+/*MAIN REGISTRARSE*/
+@media (max-width: 680px) {
+  main .contenedor_registrarse {
+    background: linear-gradient(to bottom, #636363, #b3b3b3);
+    border: solid #ffed48 1px;
+    margin-left: 18%;
+    margin-right: 18%;
+    margin-top: 10%; } }
+
+@media (max-width: 480px) {
+  main .contenedor_registrarse {
+    background: linear-gradient(to bottom, #636363, #b3b3b3);
+    border: solid #ffed48 1px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20%; } }
+
+main .contenedor_registrarse {
+  background: linear-gradient(to bottom, #636363, #b3b3b3);
+  border: solid #ffed48 1px; }
+  main .contenedor_registrarse form {
+    margin: 2em; }
+    main .contenedor_registrarse form .form-text {
+      color: #ffed48; }
+    main .contenedor_registrarse form .form-label {
+      font-weight: bolder; }
+
+/*maps*/
+body {
+  background: linear-gradient(to bottom, #525252, #252525);
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+main {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; }
+  main .imagen-cards {
+    width: 18.65rem;
+    height: 14rem; }
+  main .card {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    border-color: #c0c0c0;
+    border-width: 2px; }
+  main .card-body {
+    background: gray; }
+    main .card-body .card-text {
+      font-weight: 500;
+      color: #ffed48; }
+
+@media (max-width: 1200px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    main .imagen-cards {
+      width: 18.65rem;
+      height: 14rem; }
+    main .conteiner-cards {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+    main .card {
+      border-color: #c0c0c0;
+      border-width: 2px; }
+    main .card-body {
+      background: gray; }
+      main .card-body .card-text {
+        font-weight: 500;
+        color: #ffed48; } }
+
 * {
   margin: 0px;
   padding: 0px;

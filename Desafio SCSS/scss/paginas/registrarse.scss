@@ -1,0 +1,46 @@
+@import '../base/color.scss';
+
+/*MAIN REGISTRARSE*/
+@media (max-width: 680px) {
+    main {
+        .contenedor_registrarse{
+            background: linear-gradient(to bottom, #636363, #b3b3b3);
+            border: solid map-get($colors, secondary) 1px;
+            margin-left: 18%;
+            margin-right: 18%;
+            margin-top: 10%;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        .contenedor_registrarse{
+            background: linear-gradient(to bottom, #636363, #b3b3b3);
+            border: solid map-get($colors, secondary) 1px;
+            margin-left: 10%;
+            margin-right: 10%;
+            margin-top: 20%;
+        }
+    }
+}
+
+main {
+    .contenedor_registrarse{
+        background: linear-gradient(to bottom, #636363, #b3b3b3);
+        border: solid map-get($colors, secondary) 1px;
+
+        form{
+            margin: 2em;
+
+            .form-text{
+                color: map-get($colors, secondary)
+            }
+
+            .form-label{
+                font-weight: bolder;
+            }
+        }
+    }
+}
+
